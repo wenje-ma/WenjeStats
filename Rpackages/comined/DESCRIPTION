@@ -1,0 +1,25 @@
+Package: comined
+Type: Package
+Title: Constrained Minimum Energy Design
+Version: 1.0.0
+Date: 2026-07-28
+Author: Wenje Ma
+Maintainer: Wenje Ma <wenjema@example.com>
+Description: Implements the Constrained Minimum Energy Design (COMiNED)
+    algorithm from Huang et al. (2021) for generating candidate points
+    within a constrained region. Uses a sequence of increasing penalty
+    parameters tau to progressively tighten constraints via probit
+    relaxation, combined with minimum energy design for efficient
+    space-filling sampling. Designed for experimental design problems
+    where the feasible region is a subset of [0,1]^p defined by
+    inequality constraints.
+License: GPL-3
+Imports:
+    mined
+Suggests:
+    LHD,
+    SFDesign,
+    MaxPro
+Encoding: UTF-8
+LazyData: false
+NeedsCompilation: no
