@@ -1,0 +1,19 @@
+Package: MFGP
+Type: Package
+Title: Multi-Fidelity Gaussian Process Modeling
+Version: 0.1.0
+Date: 2026-07-28
+Author: Generated from Ch04-06-03
+Maintainer: MFGP Authors <mfgp@example.com>
+Description: Implements the multi-fidelity Gaussian process model of
+    Tuo et al. (2014) with the non-stationary kernel of Gu et al. (2018).
+    Models y(x,t) = phi(x) + delta(x,t) as a sum of two independent GPs,
+    where phi(x) uses a stationary anisotropic Gaussian kernel and
+    delta(x,t) uses a non-stationary kernel on the fidelity parameter t.
+    Designed for any p-dimensional input x with a continuous fidelity
+    parameter t. Uses profile likelihood for estimation and nlminb for
+    optimization. No external dependencies beyond base R.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: stats
+NeedsCompilation: no
