@@ -1,0 +1,16 @@
+Package: pmc
+Type: Package
+Title: Population Monte Carlo with Various Resampling Methods
+Version: 0.1.0
+Date: 2026-07-30
+Authors@R: person("Wenjie", "Ma", email="wenjie@example.com", role=c("aut", "cre"))
+Description: Provides an implementation of the Population Monte Carlo (PMC)
+    algorithm (Cappé et al., 2004) and the Population Quasi-Monte Carlo (PQMC)
+    algorithm (Huang et al., 2022). Includes a collection of resampling methods:
+    multinomial, residual, systematic, stratified, and support points resampling.
+    Also provides Hilbert curve ordering and energy distance computation.
+Imports: randtoolbox, gmp
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
