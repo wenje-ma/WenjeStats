@@ -1,0 +1,21 @@
+Package: gpcrit
+Type: Package
+Title: Gaussian Process Design Criteria (IMSE, MMSE, Entropy)
+Version: 1.0.0
+Date: 2026-07-28
+Author: Wenje Ma
+Maintainer: Wenje Ma <wenjema@example.com>
+Description: Implements IMSE (Integrated Mean Squared Error),
+    MMSE (Maximum Mean Squared Error), and entropy criteria
+    for optimal experimental design under Gaussian process models
+    with a Gaussian correlation function. Provides functions for
+    computing RMSE, IMSE, MMSE, and entropy given a design and
+    correlation length parameter theta. All functions assume a
+    1D input space [0,1] and use the correlation function
+    R(d) = exp(-(d/theta)^2).
+License: GPL-3
+Imports:
+    stats
+Encoding: UTF-8
+LazyData: false
+NeedsCompilation: no
