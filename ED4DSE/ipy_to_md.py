@@ -4,7 +4,7 @@ import nbformat
 # 改这里!!!
 # ====================
 
-with open(r'c:\Users\18904\Github\WenjeStats\ED4DSE\4.13\4.13.ipynb', 'r', encoding='utf-8') as f:
+with open(r'c:\Users\18904\Github\WenjeStats\ED4DSE\4.14.ipynb', 'r', encoding='utf-8') as f:
     content = f.read()
 start = content.index('{')
 end = content.rindex('}') + 1
@@ -30,7 +30,7 @@ md_content = '\n\n'.join(output)
 # 改这里!!!
 # ====================
 
-with open(r'c:\Users\18904\Github\WenjeStats\ED4DSE\4.13\4.13.md', 'w', encoding='utf-8') as f:
+with open(r'c:\Users\18904\Github\WenjeStats\ED4DSE\4.14.md', 'w', encoding='utf-8') as f:
     f.write(md_content)
 
 print('转换完成!')
